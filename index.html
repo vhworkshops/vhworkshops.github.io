@@ -1,6 +1,5 @@
 <style>
   body {background-image: url('./images/just-waves.png');}
-  /* a {color:rgb(247, 199, 199);} */
   @keyframes animatedBackground {
   from {
     background-position: 0 0;
@@ -11,12 +10,12 @@
 }
 body {
   background-image: url('./images/ripples.png');
-  background-color: coral;
+  background-color: rgb(152, 193, 239);
   background-position: 0px 0px;
-  animation: animatedBackground 100s linear infinite alternate;
+  animation: animatedBackground 100s linear infinite;
 }
 h1, h2 {
-  color: #000046
+  color: #000046; 
 }
 </style>
 
@@ -27,38 +26,25 @@ h1, h2 {
 <body>
   <h1>Hello, I'm Dr. Sammy, PhD!</h1>
   <img src="./images/sammy.png" width="300px">
-  <h2>About me</h2>
+  <h2 id="about-me">About me</h2>
   <p>My name is Sammy and I'm an oceanographer at Vanderbilt!</p>
   <p>Vanderbilt's proximity to oceans, as well as its pesky undergrads, are the main reasons you've probably never seen me on campus.</p>
 
+  <p>My research interests include: 
+    <ul>
+      <li>Marine geology</li>
+      <li>Chemical oceanography</li>
+      <li>The location of the nearest trash can with a Rand cookie</li>
+    </ul>
+  </p>
   <h2>Social Media</h2>
-  You can find more info about VandyHacks at the links below!
+  You can find more info about my friends at VandyHacks at the links below!
   <br/>
-  <ul class="socials">
+  <ul id="socials">
     <li class="social homepage"><a href="https://vandyhacks.org">Homepage</a></li>
     <li class="social instagram"><a href="https://www.instagram.com/vandyhacks/">Instagram</a></li>
     <li class="social youtube"><a href="https://www.youtube.com/channel/UC-sXkznjkmHLjpA5nlfdswg">YouTube</a></li>
     <li class="social twitter"><a href="https://twitter.com/vandyhacks">Twitter</a></li>
     <li class="social github"><a href="https://github.com/vandyhacks">GitHub</a></li>
-
   </ul>
-
-  <h2>Publications</h2>
-  <ul>
-
-    blehblehbleh
-    <hr/>
-    blehblehbleh
-    <hr/>
-    blehblehbleh
-    <hr/>
-    blehblehbleh
-    <hr/>
-    blehblehbleh
-    <hr/>
-  </ul>
-
-
-
-
-  </body>
+</body>

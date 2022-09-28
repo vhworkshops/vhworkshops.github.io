@@ -1,0 +1,136 @@
+<style>
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #513827;
+}
+
+.logo {
+    cursor: pointer;
+    padding: 0 60px;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+.dropbtn {
+    display: inline-block;
+    text-align: center;
+    background-color: inherit;
+    color: white;
+    padding: 34px 20px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-item {
+    float: left;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  text-decoration: none;
+  padding: 12px 80px 12px 20px;
+  display: block;
+}
+
+.challenge-text {
+    margin: 8px;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #684731;
+  color: #ffeee3;
+}
+
+.fa-search {
+    margin-right: 5px;
+}
+
+.search {
+    padding: 17px 0;
+    cursor: pointer;
+    display: inline-block;
+    color: white;
+}
+.cart {
+    padding: 18px 0;
+    margin-left: 30px;
+    cursor: pointer;
+    color: white;
+    display: inline-block;
+}
+
+.nav-right {
+    margin-right: 30px;
+    float: right;
+}
+</style>
+<head>
+    <title>Challenge</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<div class="challenge-text">
+    <h2>Challenge: Sammy the Picky Eater</h2>
+    <p>Sammy is a picky eater, who is on a nuts shopping spree for the coming winter. He goes onto his favorite online store Squirrel Mart, and is overwhelmed by the hundreds of options!</p>
+    <p>Help Sammy determine which nuts he should consider purchasing by <b>printing out all nuts with a rating of <i>4 stars or more</i>.</b></p>
+    <p>Scrape each page by using the links in the menu below. The only url you should be hard-coding is the homepage of the website: <a href="https://vhworkshops.github.io/vhchallenge">https://vhworkshops.github.io/vhchallenge</a>. <b>You must programatically retrieve all other links.</b></p>
+</div>
+
+    <nav class="menu">
+        <li class="menu-item logo">
+            <p>Squirrel Mart</p>
+        </li>
+        <li class="menu-item dropdown">
+            <button class="dropbtn">Some Nuts</button>
+            <div class="dropdown-content">
+                <a href="shop/acorns.html">Acorns</a>
+                <a href="shop/almonds.html">Almonds</a>
+                <a href="shop/peanuts.html">Peanuts</a>
+                <a href="shop/walnuts.html">Walnuts</a>
+            </div>
+        </li>
+        <li class="menu-item dropdown">
+            <button class="dropbtn">Even More Nuts</button>
+            <div class="dropdown-content">
+                <a href="shop/cashews.html">Cashews</a>
+                <a href="shop/macadamia.html">Macadamia</a>
+                <a href="shop/pecans.html">Pecans</a>
+                <a href="shop/pistachios.html">Pistachios</a>
+            </div>
+        </li>
+        <li class="nav-right">
+            <div class="menu-item">
+                <p class="search"><i class="fa fa-search"></i> Search</p>
+            </div>
+            <div class="menu-item">
+                <p class="cart"><i class="fa fa-shopping-cart"></i></p>
+            </div>
+        </li>
+    </nav>
+
+<br />
+
+<p>*Random bit of text that's not part of the menu with a <a href="shop/rescolleges.html">link</a> to throw you off.* <b>DO NOT SCRAPE.</b></p>
